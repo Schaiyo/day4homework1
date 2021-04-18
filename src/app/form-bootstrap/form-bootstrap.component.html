@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="card card-width">
+        <div class="card-body">
+            <form [formGroup]="form">
+                <div class="form-group">
+                  <label for="name">Name <span style="color: red;">*</span></label>
+                  <input type="text" class="form-control" formControlName="name" placeholder="Your answer">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email <span style="color: red;">*</span></label>
+                  <input type="email" class="form-control" formControlName="email" aria-describedby="emailHelp" placeholder="Your answer">
+                </div>
+                <div class="form-group">
+                  <label for="address">Portal Address <span style="color: red;">*</span></label>
+                  <input type="text" class="form-control" formControlName="address" placeholder="Your answer">
+                </div>
+                <div class="form-group">
+                  <label for="comments">Comments</label>
+                  <input type="text" class="form-control" formControlName="comments" placeholder="Your answer">
+                </div>
+                <p style="padding-top: 2em;">
+                    <button type="submit" class="btn btn-primary" (click)="submitForm()">Submit</button>
+                </p>
+              </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+.container {
+    margin-top: 2em;
+}
+
+.card-width {
+    width: 50%;
+    margin: auto;
+}
+
+input[type=text],input[type=email] {
+  border: none;
+  border-bottom: 1px solid lightgray;
+}
